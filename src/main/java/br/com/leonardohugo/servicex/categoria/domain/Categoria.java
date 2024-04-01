@@ -20,16 +20,22 @@ import java.util.List;
 @NoArgsConstructor
 public class Categoria {
 
-    @EqualsAndHashCode.Include
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID_CATEGORIA")
-    private Integer idCategoria;
+    @GeneratedValue(
+            strategy = GenerationType.IDENTITY
+    )
+    @EqualsAndHashCode.Include
+    private Integer id;
 
-    @Column(name = "NOME_CATEGORIA")
-    private String nomeCategoria;
+    @Column(
+            name = "nome",
+            nullable = false
+    )
+    private String nome;
 
-    @OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
+    @OneToMany(
+            mappedBy = "categoria",
+            cascade = CascadeType.ALL
+    )
     private List<Servico> servicos;
-
 }
