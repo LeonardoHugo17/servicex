@@ -14,14 +14,13 @@ import java.util.Date;
 @Getter
 @Setter
 @Entity
-@NoArgsConstructor
 @JsonTypeName("pagamentoBoleto")
 public class PagamentoBoleto extends Pagamento{
     @Column(name = "DATA_VENCIMENTO")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private Date dataVencimento;
 
-    @Column(name = "DATA_VENCIMENTO")
+    @Column(name = "DATA_PAGAMENTO")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private Date dataPagamento;
 
