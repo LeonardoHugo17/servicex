@@ -1,4 +1,4 @@
-package br.com.leonardohugo.servicex.servico.service;
+package br.com.leonardohugo.servicex.categoria.service;
 
 import br.com.leonardohugo.servicex.categoria.domain.Categoria;
 import br.com.leonardohugo.servicex.categoria.repository.CategoriaRepository;

@@ -1,4 +1,4 @@
-package br.com.leonardohugo.servicex.servico.resource;
+package br.com.leonardohugo.servicex.categoria.resource;
 
 import br.com.leonardohugo.servicex.categoria.domain.Categoria;
 import br.com.leonardohugo.servicex.categoria.service.CategoriaService;
@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/categorias")
+@RequestMapping("/categorias")
 public class CategoriaResource {
+
     private CategoriaService categoriaService;
 
     public CategoriaResource(CategoriaService categoriaService) {
