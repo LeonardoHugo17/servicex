@@ -2,7 +2,6 @@ package br.com.leonardohugo.servicex.categoria.service;
 
 import br.com.leonardohugo.servicex.categoria.domain.Categoria;
 import br.com.leonardohugo.servicex.categoria.repository.CategoriaRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
